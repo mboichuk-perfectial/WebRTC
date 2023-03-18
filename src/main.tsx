@@ -21,6 +21,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
+      <nav className="menu">
+          <ul>
+              <li><a href="/">WebRTC</a></li>
+              <li><a href="/mediator">Mediator</a></li>
+          </ul>
+      </nav>
       <RouterProvider router={router} />
   </React.StrictMode>,
 )

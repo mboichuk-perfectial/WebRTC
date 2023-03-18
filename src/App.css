@@ -57,3 +57,13 @@ textarea {
 .app-videos video {
   width: 50%;
 }
+
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
