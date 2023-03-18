@@ -1,0 +1,25 @@
+.news-block {
+    width: 300px;
+    background: #747bff;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.news-input {
+    width: 300px;
+}
+
+.news-input {
+    width: auto;
+}
+
+.news-input textarea {
+    width: 300px;
+}

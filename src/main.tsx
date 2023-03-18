@@ -6,7 +6,8 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import { Mediator } from "./tasks/patterns/mediator";
+import { Mediator } from "./tasks/patterns/mediator/mediator";
+import { Observer } from "./tasks/patterns/observer/observer";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
     {
         path: "/mediator",
         Component: Mediator,
-    }
+    },
+    {
+        path: "/observer",
+        Component: Observer,
+    },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -25,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <ul>
               <li><a href="/">WebRTC</a></li>
               <li><a href="/mediator">Mediator</a></li>
+              <li><a href="/observer">Observer</a></li>
           </ul>
       </nav>
       <RouterProvider router={router} />
