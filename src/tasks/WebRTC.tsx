@@ -1,5 +1,5 @@
 import {useEffect, useMemo, useRef, useState} from 'react'
-import './App.css';
+import '../App.css';
 const getConnectedDevices = async (type: string) => {
     const devices = await navigator.mediaDevices.enumerateDevices();
     return devices.filter(device => device.kind === type)
@@ -10,7 +10,7 @@ const CONFIGURATION = { 'iceServers': [{ 'urls': 'stun:stun.l.google.com:19302' 
 
 const peerConnection = new RTCPeerConnection(CONFIGURATION);
 
-function App() {
+function WebRTC() {
     const [offer, setOffer]: any = useState(null);
     const [answer, setAnswer]: any = useState(null);
     const [isAnswering, setIsAnswering] = useState(false);
@@ -122,4 +122,4 @@ function App() {
     )
 }
 
-export default App
+export default WebRTC
